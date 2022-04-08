@@ -11,6 +11,10 @@
 		65DD1CC928002A6800C5DF89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD1CC828002A6800C5DF89 /* ContentView.swift */; };
 		65DD1CCB28002A6A00C5DF89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DD1CCA28002A6A00C5DF89 /* Assets.xcassets */; };
 		65DD1CCE28002A6A00C5DF89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DD1CCD28002A6A00C5DF89 /* Preview Assets.xcassets */; };
+		65DD1CD528002AD600C5DF89 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD1CD428002AD600C5DF89 /* Movie.swift */; };
+		65DD1CD728002AF300C5DF89 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD1CD628002AF300C5DF89 /* MovieListViewModel.swift */; };
+		65DD1CDB28002B3A00C5DF89 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD1CDA28002B3A00C5DF89 /* String+Extensions.swift */; };
+		65DD1CDD28002B5700C5DF89 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD1CDC28002B5700C5DF89 /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		65DD1CC828002A6800C5DF89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65DD1CCA28002A6A00C5DF89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65DD1CCD28002A6A00C5DF89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65DD1CD428002AD600C5DF89 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		65DD1CD628002AF300C5DF89 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		65DD1CDA28002B3A00C5DF89 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		65DD1CDC28002B5700C5DF89 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		65DD1CDE28002BE900C5DF89 /* Movie-list-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Movie-list-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,13 @@
 		65DD1CC528002A6800C5DF89 /* Movie list */ = {
 			isa = PBXGroup;
 			children = (
+				65DD1CDE28002BE900C5DF89 /* Movie-list-Info.plist */,
 				65DD1CC628002A6800C5DF89 /* Movie_listApp.swift */,
 				65DD1CC828002A6800C5DF89 /* ContentView.swift */,
+				65DD1CD428002AD600C5DF89 /* Movie.swift */,
+				65DD1CD628002AF300C5DF89 /* MovieListViewModel.swift */,
+				65DD1CDA28002B3A00C5DF89 /* String+Extensions.swift */,
+				65DD1CDC28002B5700C5DF89 /* Webservice.swift */,
 				65DD1CCA28002A6A00C5DF89 /* Assets.xcassets */,
 				65DD1CCC28002A6A00C5DF89 /* Preview Content */,
 			);
@@ -137,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DD1CDB28002B3A00C5DF89 /* String+Extensions.swift in Sources */,
 				65DD1CC928002A6800C5DF89 /* ContentView.swift in Sources */,
+				65DD1CDD28002B5700C5DF89 /* Webservice.swift in Sources */,
 				65DD1CC728002A6800C5DF89 /* Movie_listApp.swift in Sources */,
+				65DD1CD528002AD600C5DF89 /* Movie.swift in Sources */,
+				65DD1CD728002AF300C5DF89 /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +288,7 @@
 				DEVELOPMENT_TEAM = ZF28LDJ8WC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Movie-list-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,7 +303,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,6 +318,7 @@
 				DEVELOPMENT_TEAM = ZF28LDJ8WC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Movie-list-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,7 +333,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
